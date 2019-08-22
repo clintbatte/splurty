@@ -25,8 +25,26 @@
         <%= link_to 'about', '#' %>
       </div>
     </header>
-    <hr />
+    <hr/>
     <br class="clear"/>
-    <%= yield %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote'%>
+          </div>
+          <div class="col-7 footer-blurb">
+            Proudly hacked by
+            <a href="http://www.clintbatte.com/">clint batte</a>
+            <p class="mb-0">Want to build your own Splurty Web App</p>
+            <a href="https://online.bootcampspot.com">Learn how to code here</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
