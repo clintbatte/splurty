@@ -71,17 +71,35 @@ h2 {
   font-family: 'ralewaysemibold_italic', sans-serif;
   font-weight: normal;
   letter-spacing: -1.5px;
+  span {
+    color: #dddddd;
+    font-family: 'ralewaymedium', sans-serif;
+  }
+}
+
+.modal {
+  font-family: 'ralewaymedium', sans-serif;
 }
 
 .next-quote {
   color: #f84342;
-  font-family: 'ralewaythin', serif;
+  font-family: 'ralewaythin', sans-serif;
   font-size: 25;
 
 }
 .footer-blurb {
-  font-family: 'ralewaythin', serif;
+  font-family: 'ralewaythin', sans-serif;
   font-size: 20;
   text-align: right;
   font-size: 12px;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+::selection {
+  background-color: #f84342;
 }
